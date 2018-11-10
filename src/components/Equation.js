@@ -69,14 +69,23 @@ const filterValue = prefix => {
 class Equation extends React.Component {
   render() {
     return (
-      <MentionWrapper {...this.props}>
-        <MentionMenu
-          className="mentionwrapper"
-          trigger="."
-          item={MenuItem}
-          resolve={filterValue}
-        />
-      </MentionWrapper>
+      <div>
+        <p>What equation do you want to use?</p>
+        <MentionWrapper {...this.props}>
+          <MentionMenu
+            className="mentionwrapper"
+            trigger="."
+            item={MenuItem}
+            resolve={filterValue}
+          />
+        </MentionWrapper>
+        <div>Tips</div>
+        <ul>
+          <li>Use market. to bring up the list of markets.</li>
+          <li>The syntax for fetching a ticker price is market.$exchange.$pair.$type.</li>
+          <li>Aggregate functions: min(...), max(...) and avg(...).</li>
+        </ul>
+      </div>
     );
   }
 }

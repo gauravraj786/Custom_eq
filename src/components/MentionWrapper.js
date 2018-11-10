@@ -51,7 +51,8 @@ class MentionWrapper extends Component {
           child,
           left: coords.left + left + this.ref.scrollLeft,
           triggerIdx,
-          top: coords.top + top + coords.height - this.ref.scrollTop
+          top: coords.top + top 
+          // + coords.height - this.ref.scrollTop
         })
       }, 0)
     } else {
@@ -88,7 +89,6 @@ class MentionWrapper extends Component {
   };
 
   handleBlur = (e) => {
-    // if the menu is open, don't treat a click as a blur (required for the click handler)
     const {onBlur} = this.props;
     if (onBlur && !this.state.top) {
       onBlur(e);
