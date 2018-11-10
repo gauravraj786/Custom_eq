@@ -1,0 +1,31 @@
+{
+  "market":[
+  { 
+    "value": "nse"
+  },
+  { 
+    "value":"bse"
+  }
+],"stock":[
+  { 
+    "value": "Reliance"
+  },{ 
+    "value": "Adani"
+  },{ 
+    "value": "AdityaBirla"
+  },{ 
+    "value": "SteelIndia"
+  },{ 
+    "value": "HDFC"
+  },{ 
+    "value": "ICICI"
+  }
+],"type":[
+  { 
+    "value": "buy"
+  },
+  { 
+    "value":"sell"
+  }
+]
+}
